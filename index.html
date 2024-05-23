@@ -23,21 +23,21 @@
                     <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Categorias</a>
+                    <a class="nav-link" href="categorias.html">Categorias</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Cuenta
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                      <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Iniciar Sesión</a></li>
+                      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Registrarse</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Ayuda</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Contactos</a>
+                    <a class="nav-link" aria-disabled="true" href="contactos.html">Contactos</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -49,6 +49,71 @@
           </nav>
         <!-- Content navbar -->
 
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--form-->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+        <form>
+         <!--form-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Sizing-->
+        <select class="form-select form-select-sm" aria-label="Small select example">
+          <option selected>Tipo de Documento</option>
+          <option value="1">C.C.</option>
+          <option value="2">T.I.</option>
+          <option value="3">PEP</option>
+        </select>
+        <!--Sizing-->
+        <br>
+        <input class="form-control" type="number" placeholder="Numero de Documento" aria-label="default input example"><br>
+        <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example"><br>
+        <input class="form-control" type="text" placeholder="Apellidos" aria-label="default input example"><br>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <input class="form-control" type="number" placeholder="Celular" aria-label="default input example"><br>
+        <input class="form-control" type="password" placeholder="Contraseña" aria-label="default input example">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
         
         <!-- Content carousel-->
         <div id="carouselExampleIndicators" class="carousel slide">
